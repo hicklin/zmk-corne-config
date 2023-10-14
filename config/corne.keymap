@@ -13,6 +13,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -43,7 +46,7 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <37 27>;
+            key-positions = <27 37>;
             layers = <0 1>;
         };
 
@@ -68,18 +71,18 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &kp EQUAL      &trans    &kp UP    &trans           &kp HOME  &kp PG_UP
-&trans  &trans  &trans  &kp LBKT  &kp RBKT  &trans    &kp HASH       &kp LEFT  &kp DOWN  &kp RIGHT        &kp END   &kp PG_DN
-&trans  &trans  &trans  &kp LBRC  &kp RBRC  &trans    &kp BACKSLASH  &kp DEL   &kp INS   &kp PRINTSCREEN  &trans    &trans
-                        &trans    &to 0     &trans    &trans         &trans    &trans
+&trans           &kp GRAVE  &kp DOUBLE_QUOTES  &kp LPAR  &kp RPAR  &none     &kp EQUAL      &none     &kp UP    &none            &kp HOME  &kp PG_UP
+&kp RIGHT_SHIFT  &none      &none              &kp LBKT  &kp RBKT  &none     &kp HASH       &kp LEFT  &kp DOWN  &kp RIGHT        &kp END   &kp PG_DN
+&trans           &kp LGUI   &none              &kp RALT  &none     &none     &kp BACKSLASH  &kp DEL   &kp INS   &kp PRINTSCREEN  &none     &trans
+                                               &trans    &to 0     &trans    &trans         &trans    &trans
             >;
         };
 
         numbers {
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &kp N7  &kp N8  &kp N9  &trans      &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &kp N4  &kp N5  &kp N6  &trans      &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans     &kp N0  &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
+&none   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &kp N7  &kp N8  &kp N9  &trans      &trans
+&none   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none   &kp N4  &kp N5  &kp N6  &trans      &trans
+&trans  &kp F11  &kp F12  &none   &none   &none      &kp N0  &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
                           &trans  &to 0   &trans     &trans  &trans  &trans
             >;
         };
