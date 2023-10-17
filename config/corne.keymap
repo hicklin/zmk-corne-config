@@ -60,7 +60,7 @@
 &kp ESC    &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y         &kp F    &kp G     &kp C     &kp R  &kp L  &kp FSLH
 &kp TAB    &kp A     &kp O      &kp E     &kp U  &kp I         &kp D    &kp H     &kp T     &kp N  &kp S  &kp MINUS
 &kp LCTRL  &kp SEMI  &kp Q      &kp J     &kp K  &kp X         &kp B    &kp M     &kp W     &kp V  &kp Z  &kp LALT
-                                &kp LGUI  &mo 1  &kp LSHIFT    &kp SPACE  &kp RET &kp BSPC  
+                                &kp RET   &mo 1  &kp LSHIFT    &kp SPACE &kp BSPC &kp LGUI
             >;
         };
 
@@ -68,7 +68,7 @@
             bindings = <
 &trans           &kp GRAVE        &kp AT    &kp LPAR  &kp RPAR  &none   &kp EQUAL        &none     &kp UP    &none            &kp HOME  &kp PG_UP
 &kp RIGHT_SHIFT  &kp RIGHT_SHIFT  &kp LGUI  &kp LBKT  &kp RBKT  &none   &kp NON_US_HASH  &kp LEFT  &kp DOWN  &kp RIGHT        &kp END   &kp PG_DN
-&trans           &none            &none     &kp LALT  &none     &none   &kp NON_US_BSLH  &kp DEL   &kp INS   &kp PRINTSCREEN  &none     &trans
+&trans           &none            &none     &kp LALT  &kp LALT  &none   &kp NON_US_BSLH  &kp DEL   &kp INS   &kp PRINTSCREEN  &none     &trans
                                             &trans    &to 0     &trans  &trans           &trans    &trans
             >;
         };
