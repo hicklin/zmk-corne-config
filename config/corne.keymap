@@ -13,6 +13,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -71,7 +72,7 @@
 &trans           &kp GRAVE        &kp AT    &kp LPAR  &kp RPAR  &kp ASTRK    &kp EQUAL        &none     &kp UP    &none        &kp HOME   &kp PG_UP
 &kp RIGHT_SHIFT  &kp RIGHT_SHIFT  &kp LGUI  &kp LBKT  &kp RBKT  &kp AMPS     &kp NON_US_HASH  &kp LEFT  &kp DOWN  &kp RIGHT    &kp END    &kp PG_DN
 &trans           &none            &none     &kp LALT  &kp LALT  &kp EXCL     &kp NON_US_BSLH  &kp DEL   &kp INS   &kp K_CMENU  &kp PSCRN  &trans
-                                            &trans    &to 0     &trans       &trans           &trans    &trans
+                                            &trans    &to 0     &trans       &trans           &mo 2     &trans
             >;
         };
 
@@ -94,6 +95,7 @@
         };
     };
 };
+
 
 
 // Underglow configs
