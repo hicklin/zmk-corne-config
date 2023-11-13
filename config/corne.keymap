@@ -18,15 +18,21 @@
     combos {
         compatible = "zmk,combos";
 
+        to_default {
+            bindings = <&to 0>;
+            key-positions = <40 19>;
+            layers = <1 2 3>;
+        };
+
         to_navigation {
             bindings = <&to 1>;
-            key-positions = <37 15>;
-            layers = <3 0 2>;
+            key-positions = <40 20>;
+            layers = <0 2 3>;
         };
 
         to_numbers {
             bindings = <&to 2>;
-            key-positions = <37 20>;
+            key-positions = <40 21>;
             layers = <0 1 3>;
         };
 
@@ -71,8 +77,8 @@
             bindings = <
 &trans           &kp GRAVE        &kp AT    &kp LPAR  &kp RPAR  &kp ASTRK    &kp EQUAL        &none     &kp UP    &none        &kp HOME   &kp PG_UP
 &kp RIGHT_SHIFT  &kp RIGHT_SHIFT  &kp LGUI  &kp LBKT  &kp RBKT  &kp AMPS     &kp NON_US_HASH  &kp LEFT  &kp DOWN  &kp RIGHT    &kp END    &kp PG_DN
-&trans           &none            &none     &kp LALT  &kp LALT  &kp EXCL     &kp NON_US_BSLH  &kp DEL   &kp INS   &kp K_CMENU  &kp PSCRN  &trans
-                                            &trans    &to 0     &trans       &trans           &mo 2     &trans
+&trans           &mo 2            &none     &kp LALT  &kp LALT  &kp EXCL     &kp NON_US_BSLH  &kp DEL   &kp INS   &kp K_CMENU  &kp PSCRN  &trans
+                                            &trans    &to 0     &trans       &trans           &trans    &trans
             >;
         };
 
@@ -95,6 +101,7 @@
         };
     };
 };
+
 
 
 
