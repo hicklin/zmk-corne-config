@@ -20,19 +20,19 @@
 
         to_default {
             bindings = <&to 0>;
-            key-positions = <40 19>;
+            key-positions = <40 21>;
             layers = <1 2 3>;
         };
 
         to_navigation {
             bindings = <&to 1>;
-            key-positions = <40 20>;
+            key-positions = <40 19>;
             layers = <0 2 3>;
         };
 
         to_numbers {
             bindings = <&to 2>;
-            key-positions = <40 21>;
+            key-positions = <40 20>;
             layers = <0 1 3>;
         };
 
