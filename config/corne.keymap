@@ -74,10 +74,10 @@
 
         navigation {
             bindings = <
-&trans           &kp GRAVE  &kp AT           &kp LPAR  &kp RPAR  &kp ASTRK    &kp EQUAL        &none     &kp UP    &none        &kp HOME   &kp PG_UP
-&kp RIGHT_SHIFT  &none      &kp RIGHT_SHIFT  &kp LBKT  &kp RBKT  &kp AMPS     &kp NON_US_HASH  &kp LEFT  &kp DOWN  &kp RIGHT    &kp END    &kp PG_DN
-&trans           &mo 2      &kp LGUI         &kp LALT  &kp LALT  &kp EXCL     &kp NON_US_BSLH  &kp DEL   &kp INS   &kp K_CMENU  &kp PSCRN  &trans
-                                             &trans    &to 0     &trans       &trans           &trans    &trans
+&trans           &kp GRAVE       &kp AT           &kp LPAR  &kp RPAR  &kp ASTRK    &kp EQUAL        &none     &kp UP    &none        &kp HOME   &kp PG_UP
+&kp RIGHT_SHIFT  &mo 2           &kp RIGHT_SHIFT  &kp LBKT  &kp RBKT  &kp AMPS     &kp NON_US_HASH  &kp LEFT  &kp DOWN  &kp RIGHT    &kp END    &kp PG_DN
+&trans           &kp LEFT_SHIFT  &kp LGUI         &kp LALT  &kp LALT  &kp EXCL     &kp NON_US_BSLH  &kp DEL   &kp INS   &kp K_CMENU  &kp PSCRN  &trans
+                                                  &trans    &to 0     &trans       &trans           &trans    &trans
             >;
         };
 
@@ -92,9 +92,9 @@
 
         colours {
             bindings = <
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF    &none         &none         &none   &none  &none  &none
-&bt BT_CLR       &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR    &none         &none         &none   &none  &none  &none
-&trans           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &out OUT_USB  &out OUT_BLE  &none   &none  &none  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF    &kp C_VOL_UP  &none         &none   &none  &none  &none
+&bt BT_CLR       &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR    &kp C_VOL_DN  &none         &none   &none  &none  &none
+&trans           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &out OUT_BLE  &out OUT_USB  &none   &none  &none  &trans
                                                    &trans           &to 0            &trans             &trans        &trans        &trans
             >;
         };
