@@ -17,7 +17,7 @@ Steps 1 to 3 only need to me done once.
 up to and including the "Install Zephyr SDK" section.
 2. If this repository is already cloned locally, run `west init -l <path to the config/west.yaml>`. This will pull in all the dependency modules alongside this project. If this repository is not yet cloned locally, run `west init -m <this repo's gitdub url>`. This will clone this repo together with all its dependencies.
 3. Now run `west update` from the project root.
-4. Build using `west build -s zmk/app -b "nice_nano_v2" --pristine -- -DZMK_CONFIG="/home/whicklin/Documents/openRepos/zmk-corne-config/config" -DKEYMAP_FILE="/home/whicklin/Documents/openRepos/zmk-corne-config/config/corne.keymap" -DSHIELD="corne_left nice_view_adapter nice_view"`. Note, this bilds for the left shield. To build for the right, change `corne_left` to `corne_right` in `-DSHIELD`.
+4. Build using `west build -s zmk/app -b "nice_nano_v2" --pristine -- -DZMK_CONFIG="/home/whicklin/Documents/openRepos/zmk-corne-config/config" -DKEYMAP_FILE="/home/whicklin/Documents/openRepos/zmk-corne-config/config/corne.keymap" -DSHIELD="corne_left nice_view_adapter nice_view"`. Note, this builds for the left shield. To build for the right, change `corne_left` to `corne_right` in `-DSHIELD`.
 5. The firmware is located at `build/zephyr/zmk.uf2`.
 6. Boot the nice!nano into the bootloader mode by double-clicking the reset button. This will make it appear like a mass-storage device.
 7. Copy the firmware to the nice!nano.
